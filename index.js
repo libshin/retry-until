@@ -1,3 +1,10 @@
+/**
+ * If function fn fails (even if it's a promise), retries it at most maxIterate times
+ * @param {Function} fn
+ * @param {number} maxIterate
+ * @param {number} timeout
+ * @returns {Promise}
+ */
 const retryUntil = (fn, maxIterate = 10, timeout = 1000) =>
   new Promise(async (resolve, reject) => {
     try {
@@ -14,4 +21,4 @@ const retryUntil = (fn, maxIterate = 10, timeout = 1000) =>
     }
   });
 
-module.exports = retryUntil;
+export default retryUntil;

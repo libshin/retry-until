@@ -1,0 +1,23 @@
+{
+  "name": "@libshin/retry-until",
+  "version": "0.1.0",
+  "description": "Retry promises n times",
+  "source": "index.js",
+  "umd:main": "build/retry-until.umd.js",
+  "main": "build/retry-until.js",
+  "module": "build/retry-until.m.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:libshin/retry-until.git"
+  },
+  "author": "ayc0 (https://ayc0.github.io/stuff/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "microbundle watch",
+    "build": "microbundle",
+    "release": "yarn -s build && npm publish --access public"
+  },
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  }
+}
