@@ -1,6 +1,6 @@
 {
   "name": "@libshin/retry-until",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Retry promises n times",
   "source": "index.js",
   "umd:main": "build/retry-until.umd.js",
